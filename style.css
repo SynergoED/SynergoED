@@ -320,14 +320,13 @@ body{
 {
   #parr-ini{
 	  padding-rigth: 5vw;      
-	  width:85%;
-	  font-size:2vw;
+	  width:100%;
+	  font-size:3vw;
 	 }
 }
 #inf_prin-espe-fondo{
 	margin: -2vw;
 	margin-bottom: 3vw;
-	background: ;
 }
 @media only screen and (max-width : 900px) 
 { 
