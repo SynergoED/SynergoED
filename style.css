@@ -12,49 +12,58 @@ body{
 	padding-left: 4vw;
 	width: 21%;
 	max-width: 100%;
-	@media only screen and (max-width : 900px) 
-	   { 
-	      width:34%;	      
-	   }
+	
 }
+@media only screen and (max-width : 900px) 
+{ 
+	      .imag-prin{
+	      width:34%;}      
+}
+
 .imag-prin img{
 	width: 100%;
 }
 .header__inicio{
-	position: fixed;
-	align-items: center;
+	   position: fixed;
+	   align-items: center;
     background: white;
     border-bottom: 3.5px solid;
     display: flex;
     height: 16vh;
     justify-content: space-between;
-    font-size: 2vw;
-    	@media only screen and (max-width : 900px) 
-	   { 
-	      font-size:3vw;
-	      height:10vh;	      
-	   }
-	z-index: 1;
+    font-size: 1.8vw;
+    z-index: 1;
 }
-
+@media only screen and (max-width : 900px) 
+	   { 
+	     .header__inicio{
+	          font-size:3vw;
+	          height:10vh;	      
+	     }
+}
 .header__a{
 	text-decoration: none;
 	color: black;
 	padding-right: 2vw;
 	transition: color .2s, font-size .2s;
-		@media only screen and (max-width : 900px) 
-	   { 
-	      	 color: #217808;    
-	   }
+		
 }
+@media only screen and (max-width : 900px) 
+{ 
+    .herader__a{
+	      	 color: #217808;  }
+}
+
+
 .header__a:hover{
 	color: #217808;
 	font-size: 2.4vw;
-	@media only screen and (max-width : 900px) 
-	  { 
+}
+@media only screen and (max-width : 900px) 
+{ 
+    .header__a:hover{
 	     color:black;
-	     font-size:3.3vw;
-	  }
+	     font-size:3.3vw;}
 }
 .navegador{
 	padding-right: 15vw;
@@ -85,22 +94,24 @@ body{
     grid-template-columns: 6vw 6vw;
     column-gap: 3vw;
     padding-top: 1vw;
-   @media only screen and (max-width : 900px) 
-	  { 
+}
+@media only screen and (max-width : 900px) 
+{ 
+    #img-foot{
 	     column-gap:10vw; 
 	     padding-top:0;
-	  }
-    
-}
+	     }
+}   
 #inf-foot{
 	display: grid;
 	grid-template-columns: 60vw 7vw;
 	column-gap: 20vw;
- @media only screen and (max-width : 900px) 
-	  { 
+}
+@media only screen and (max-width : 900px) 
+{ 
+    #inf-foot{
 	     column-gap:10vw;
-	     grid-template-columns: 55vw 7vw;
-	  }
+	     grid-template-columns: 55vw 7vw;}
 }
 #img-correo img{
 	border-radius: 5px;
@@ -111,12 +122,13 @@ body{
 	background:  #9999cc;
 }
 #img-correo{
-	padding-top: 2vh;
- @media only screen and (max-width : 900px) 
-	  { 
-	     padding-top:1vh;
-	  }	
+	padding-top: 2vh; 
 }
+@media only screen and (max-width : 900px) 
+{ 
+    #img-correo{
+	     padding-top:1vh;}
+}	
 
 #img-whatsapp img{
 	border-radius: 1vw;
@@ -128,12 +140,12 @@ body{
 }
 #img-whatsapp{
 	padding-top: 1vh;
-	@media only screen and (max-width : 900px) 
-	{ 
-	  padding-top:1.5vw;
-	}
 }
-
+@media only screen and (max-width : 900px) 
+	{
+	    #img-whatsapp{
+	      padding-top:1.5vw;}
+	}
 
 
 
@@ -150,11 +162,13 @@ body{
 	padding: 2vw;	
 	color: white;
 	background: #0F5D80;
-		@media only screen and (max-width : 900px) 
-	{ 
-	  font-size:4vw;
-	  margin-top:3vh;
-	}
+}
+@media only screen and (max-width : 900px) 
+{
+    .inf_prin__h1{
+	      font-size:4vw;
+	      margin-top:3vh;
+	    }
 }
 
 .inf_prin__h2{
@@ -246,27 +260,28 @@ body{
 	top: -10vh;
 	left: 70vw;
 	transition: box-shadow .5s, font-size .5s  ,top .5s ,left .5s ;
-	@media only screen and (max-width : 900px) 
-	{ 
+}
+@media only screen and (max-width : 900px) 
+	{
+	  #vermas{
 	  font-size:5vw;
 	  top:-5vh;
-	  left:60vw;
+	  left:60vw;}
 	}
-}
 
 #vermas:hover{
 	font-size: 3vw;
 	box-shadow: .5em .5em 1em ;
 	top: -12vh;
 	left: 66vw;
-	@media only screen and (max-width : 900px) 
-	{ 
+}
+@media only screen and (max-width : 900px) 
+{ 
+  #vermas:hover{
 	  font-size:5vw;
 	  top:-5vh;
-	  left:60vw;
-	}
+	  left:60vw;}
 }
-
 
 
 
@@ -284,42 +299,48 @@ body{
 	margin: 0 4vw;
 	display: grid;
 	row-gap: 5vw;
-	@media only screen and (max-width : 900px) 
-	{ 
-	  padding-top: 15vh;      
-	}
+}
+@media only screen and (max-width : 900px) 
+{
+	.inf_prin-espe{
+	  padding-top: 15vh; 
+	  }     
 }
 #parr-ini{
 	font-size: 2vw;
 	text-align: justify;
 	margin-rigth:2vw;
-	@media only screen and (max-width : 900px) 
-	{ 
+}
+@media only screen and (max-width : 900px) 
+{
+  #parr-ini{
 	  padding-rigth: 5vw;      
 	  width:80%;
 	  font-size:3vw;
-	}
-
+	 }
 }
 #inf_prin-espe-fondo{
 	margin: -2vw;
 	margin-bottom: 3vw;
 	background: ;
-	@media only screen and (max-width : 900px) 
-	{ 
-	  width:95%;
-	}	
 }
+@media only screen and (max-width : 900px) 
+{ 
+   #inf_prin-espe-fondo{
+	      width:95%;
+	  }
+}	
 .div-ofr-espe__h2{
 	display: grid;
 	font-size: 2.4vw;
 	padding-bottom: 1vh;
 	justify-content: left;
-	@media only screen and (max-width : 900px) 
-	{ 
-	  width:90%;
-	}	
 }
+@media only screen and (max-width : 900px) 
+{ 
+.div-ofr-espe__h2{
+	  width:90%;}
+}	
 .div-ofr-espe__h2 h2{
 	width: 100%;
 	padding: 5vh;
@@ -338,12 +359,13 @@ body{
 	display: grid;
 	width: 90%;
 	padding:2vw;	
-	@media only screen and (max-width : 900px) 
-	{ 
-	  width:90%;
-	}	
-
 }
+@media only screen and (max-width : 900px) 
+{
+ .div-ofr-espe{
+	  width:90%;
+	  }
+}	
 .div-ofr-espe ul{
 	position: relative;
 	margin: 7vw;
@@ -364,10 +386,11 @@ body{
 #grupo1{
 	display: grid;
 	grid-template-columns: 30vw 30vw 30vw;
-	@media only screen and (max-width : 900px) 
-	{ 
-	  grid-template-columns: 28vw 28vw 28vw;
-	}
+}
+@media only screen and (max-width : 900px) 
+{ 
+ #grupo1{
+	  grid-template-columns: 28vw 28vw 28vw;}
 }
 #grupo1 img{
 	width: 100%;
@@ -410,13 +433,13 @@ body{
 #man-sise1-1{
 	width: 80%;
 	padding-top: 13vh;
-	padding-left: 4vw;
-	@media only screen and (max-width : 900px) 
-	{ 
-	  padding-top: 3vh;
-	}
-	
+	padding-left: 4vw;	
 }
+@media only screen and (max-width : 900px) 
+	{
+	  #man-sise1-1{
+	    padding-top: 3vh;}
+	}
 #man-sise1-2{
 	width: 70%;
 }
@@ -446,11 +469,12 @@ body{
 	display: grid;
 	grid-template-columns: 30vw 30vw 30vw;
 	align-items: center;
- @media only screen and (max-width : 900px) 
-	{ 
-	  grid-template-columns:28vw 28vw 28vw;
-	}
 }
+@media only screen and (max-width : 900px) 
+	{ 
+  	#inst-sisi{
+	   grid-template-columns:28vw 28vw 28vw;}
+	}
 #inst-sisi img{
 	width: 100%;
 }
@@ -458,10 +482,12 @@ body{
 	display: grid;
 	grid-template-columns: 30vw 30vw 30vw;
 	align-items: center;
- @media only screen and (max-width : 900px) 
-	{ 
-	  grid-template-columns:28vw 28vw 28vw;
-	}
+}
+@media only screen and (max-width : 900px) 
+{ 
+  #armad-tabl{
+	   grid-template-columns:28vw 28vw 28vw;
+	  }
 }
 #armad-tabl img{
 	width: 100%;
@@ -486,69 +512,45 @@ body{
 #cab-estr img{
 	width: 80%;
 }
+@media only screen and (max-width : 900px) 
+{ 
+  #div-ofr__inf1{
 
-#div-ofr__inf1{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:96%;
-	}	
-}
+	    width:96%;
+	 }
+	 #div-ofr__inf2{
+	      width:110%;
+    }
 
-#div-ofr__inf2{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:110%;
-	}	
-}
+    #div-ofr__inf3{ 
+    	  width:110%;	
+    }
+    #div-ofr__inf4{ 
+	      width:92%;
+    }
+    #div-ofr__inf6{  
+	      width:96%;	
+    }
+    #div-ofr__inf7{ 
+	      width:110%;	
+    }
+    #div-ofr__inf8{ 
+	      width:110%;	
+    }
+    #div-ofr__inf9{  
+	      width:95%;	
+    }
+    #div-ofr__inf10{ 
+	      width:98%;
+    }
+    #div-ofr__inf11{
+	      width:90%;	
+    }
+}	
 
-#div-ofr__inf3{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:110%;
-	}	
-}
-#div-ofr__inf4{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:92%;
-	}	
-}
-#div-ofr__inf6{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:96%;
-	}	
-}
-#div-ofr__inf7{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:110%;
-	}	
-}
-#div-ofr__inf8{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:110%;
-	}	
-}
-#div-ofr__inf9{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:95%;
-	}	
-}
-#div-ofr__inf10{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:98%;
-	}	
-}
-#div-ofr__inf11{
- @media only screen and (max-width : 900px) 
-	{ 
-	  width:90%;
-	}	
-}
+
+
+
 
 
 
@@ -565,9 +567,9 @@ body{
     margin: 0 4vw;
     font-size: 2vw;
 }
+@media only screen and (max-width : 900px) 
+{
 #foot-contact{
- @media only screen and (max-width : 900px) 
-	{ 
 	  position: relative; 
    bottom:-80vw;
 	}	
@@ -609,12 +611,12 @@ body{
 	border-radius: 2vw ;
 	width: 65%;
 	transition: background .2s, box-shadow .4s;
- @media only screen and (max-width : 900px) 
-	{ 
+}
+@media only screen and (max-width : 900px) 
+{ 
+ #prin-contact-correo{
 	    width:100%;
-	    margin:0;
-	}
-
+	    margin:0;}
 }
 #prin-contact-correo:hover{
 
@@ -635,26 +637,23 @@ body{
 	display: grid;
 	grid-template-columns: 20vw 37vw;
 	grid-gap: 2vw;
-	@media only screen and (max-width : 900px) 
-	{ 
-	  grid-template-columns: 40vw 40vw;
-	  column-gap:4vw;
-	}	
-	
-
 }
-
+@media only screen and (max-width : 900px) 
+{ 
+#prin-contact-correo a{
+	  grid-template-columns: 40vw 40vw;
+	  column-gap:4vw;}
+}	
 #prin-contact-correo a p{
 	margin-top: 10vh;
 	font-size: 3vw;
-	@media only screen and (max-width : 900px) 
-	{ 
-	    width:100%;
-	}
 }
-
-
-
+@media only screen and (max-width : 900px) 
+{ 
+#prin-contact-correo a p{
+	    width:100%;
+	    }
+}
 
 
 
