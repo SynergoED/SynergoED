@@ -3,7 +3,7 @@ body{
 
 	/*font-family: 'Courier Prime', monospace;
 	font-family: 'Lato', sans-serif;*/
-	font-family: "Paprika", system-ui;
+    font-family: "Paprika", system-ui;
     font-weight: 400;
     font-style: normal;
     margin: 2vw;
@@ -15,7 +15,7 @@ ul{
 	font-size: 3.5vw;
 }
 .imag-prin {
-	padding-left: 4vw;
+	
 	width: 21%;
 }
 .imag-prin img{
@@ -101,15 +101,13 @@ ul{
 }
 @media only screen and (max-width : 900px) 
 	{
-		body{
-			overflow: hidden;
-		}
+		
 		.imag-prin{
 	      	width:38%;
 	  	} 
 		.header__inicio{
 	        font-size:3vw;
-	        height:17vh;	
+	        height:15vh;	
 	        flex-direction: column;	 
 	        width: 100%;
 	     }
