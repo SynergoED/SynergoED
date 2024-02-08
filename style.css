@@ -6,26 +6,24 @@ body{
 	font-family: "Paprika", system-ui;
     font-weight: 400;
     font-style: normal;
-
+    margin: 2vw;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	margin: 4vw;
+	font-size: 3.5vw;
 }
 .imag-prin {
 	padding-left: 4vw;
 	width: 21%;
-	max-width: 100%;
-	
 }
-@media only screen and (max-width : 900px) 
-{ 
-	      .imag-prin{
-	      width:34%;}      
-}
-
 .imag-prin img{
 	width: 100%;
 }
 .header__inicio{
-	   position: fixed;
-	   align-items: center;
+	position: fixed;
+	align-items: center;
     background: white;
     border-bottom: 3.5px solid;
     display: flex;
@@ -34,40 +32,20 @@ body{
     font-size: 1.8vw;
     z-index: 1;
 }
-@media only screen and (max-width : 900px) 
-	   { 
-	     .header__inicio{
-	          font-size:3vw;
-	          height:10vh;	      
-	     }
-}
 .header__a{
 	text-decoration: none;
 	color: black;
 	padding-right: 2vw;
-	transition: color .2s, font-size .2s;
+	transition: .2s all;
 		
 }
-@media only screen and (max-width : 900px) 
-{ 
-    .herader__a{
-	      	 color: #217808;  }
-}
-
-
 .header__a:hover{
 	color: #217808;
 	font-size: 2.4vw;
 }
-@media only screen and (max-width : 900px) 
-{ 
-    .header__a:hover{
-	     color:black;
-	     font-size:3.3vw;}
-}
 .navegador{
-	padding-right: 15vw;
-    padding-left: 15vw ;
+	padding: 0 15vw;
+
 } 
 .footer{
 	margin-top: 2vw;
@@ -79,7 +57,6 @@ body{
 .footer .pie-p {
 	color: white;
 	text-align: center;
-	
 	font-size: 3vw;
 }
 .footer .pie-sy p{
@@ -94,24 +71,11 @@ body{
     grid-template-columns: 6vw 6vw;
     column-gap: 3vw;
     padding-top: 1vw;
-}
-@media only screen and (max-width : 900px) 
-{ 
-    #img-foot{
-	     column-gap:10vw; 
-	     padding-top:0;
-	     }
-}   
+}  
 #inf-foot{
 	display: grid;
 	grid-template-columns: 60vw 7vw;
 	column-gap: 20vw;
-}
-@media only screen and (max-width : 900px) 
-{ 
-    #inf-foot{
-	     column-gap:10vw;
-	     grid-template-columns: 55vw 7vw;}
 }
 #img-correo img{
 	border-radius: 5px;
@@ -124,12 +88,6 @@ body{
 #img-correo{
 	padding-top: 2vh; 
 }
-@media only screen and (max-width : 900px) 
-{ 
-    #img-correo{
-	     padding-top:1vh;}
-}	
-
 #img-whatsapp img{
 	border-radius: 1vw;
 
@@ -143,6 +101,32 @@ body{
 }
 @media only screen and (max-width : 900px) 
 	{
+		body{
+			overflow: hidden;
+		}
+		.imag-prin{
+	      	width:38%;
+	  	} 
+		.header__inicio{
+	        font-size:3vw;
+	        height:17vh;	
+	        flex-direction: column;	 
+	        width: 100%;
+	     }
+		.herader__a{
+	      	color: #217808;  }
+		.header__a:hover{
+	     	color:black;
+	     	font-size:3.3vw;}
+		#img-foot{
+	     	column-gap:10vw; 
+	     	padding-top:0;
+	     }
+ 		#inf-foot{
+	     	column-gap:10vw;
+	     	grid-template-columns: 55vw 7vw;}
+ 		#img-correo{
+	     padding-top:1vh;}
 	    #img-whatsapp{
 	      padding-top:1.5vw;}
 	}
@@ -154,26 +138,17 @@ body{
 /*-----------INDEX-------------*/
 .inf_prin{
 	padding-top: 15vw;
-	margin:0 4vw;
-		
+	margin:0 0vw;
 }
-#parr-fin{
-    font-size:3vw;
-    text-aling:justify;
-    padding-top:1.5vh;
+.inf_prin a{
+	text-decoration: none;
+	color: white;
 }
 .inf_prin__h1{
 	text-align: center;
 	padding: 2vw;	
 	color: white;
 	background: #0F5D80;
-}
-@media only screen and (max-width : 900px) 
-{
-    .inf_prin__h1{
-	      font-size:4vw;
-	      margin-top:3vh;
-	    }
 }
 
 .inf_prin__h2{
@@ -200,9 +175,10 @@ body{
 .div-principal-2{
 
 	background: #071A3D;
-	padding-top: 1vw;
-	padding-left: 2vw;
+	display: flex;
 	border-radius: 1em;
+	margin: 2vw;
+	flex-direction: column;
 }
 .div-principal-2 a{
 	font-size: 10vw;
@@ -213,7 +189,8 @@ body{
 .div-ofr img{
 	width: 100%;
 	border-radius: 30px;
-	box-shadow: 3px 3px 20px;
+	box-shadow: 3px 3px 20px black;
+	margin-left: 2vw;
 
 }
 .div-ofr {
@@ -225,27 +202,36 @@ body{
 	padding-top: 1em;
 }
 
-.div-ofr__h2{
-	padding-bottom:3vw ;
-	 font-size: 2vw;
-	 width: 43vw;
-	 height: 30vw;
-	 text-align: justify;	
-	 color: white; 
+.div-ofr__h2 a{
+	font-size: 4vw;
+	color: white;
+	margin-top: 2vw;
+	transition: .3s all;
+
 }
-.div-ofr__h2 h2{
-	padding-top: 10vw;
+.div-ofr__h2 h2:hover{
+	font-size: 4.2;
+	border-radius: 1.5vw;
+	background: #217808;
+}
+.div-ofr__h2 {
+
+	margin: 4vh 6vw;
+}
+.div-ofr__h2 h2 {
+	display: flex;
+	justify-items: center;
+	justify-content:center;
+	text-align: center;
+	width: 100%;
 }
 .div-img {
 	padding-bottom:2vw ;
 	width: 100%;
-
-
-
 }
 .inf-fn{	
 
-	margin-top: 1vw;
+	margin: 2vw;
 	
 }
 .inf-fn b{
@@ -253,39 +239,38 @@ body{
 	font-size: 1.7vw;
 }
 
-#vermas {
-	position: relative;
+/*#vermas {
 	font-size: 2vw;
 	text-decoration: none;
-	padding:1.5vw;
-	width: 100%;
 	background: green;
 	border-radius: 1em;
-	z-index: 0;
-	top: -10vh;
-	left: 70vw;
-	transition: box-shadow .5s, font-size .5s  ,top .5s ,left .5s ;
-}
-@media only screen and (max-width : 900px) 
-	{
-	  #vermas{
-	  font-size:5vw;
-	  top:-5vh;
-	  left:60vw;}
-	}
-
+	transition:.5s all;
+}*/
+/*
 #vermas:hover{
 	font-size: 3vw;
 	box-shadow: .5em .5em 1em ;
 	top: -12vh;
 	left: 66vw;
+}*/
+#parr-fin{
+    font-size:3vw;
+    text-aling:justify;
 }
 @media only screen and (max-width : 900px) 
 { 
-  #vermas:hover{
+    .inf_prin__h1{
+	      font-size:4vw;
+	      margin-top:3vh;
+	    }
+/*	#vermas{
 	  font-size:5vw;
 	  top:-5vh;
 	  left:60vw;}
+  	#vermas:hover{
+	  font-size:5vw;
+	  top:-5vh;
+	  left:60vw;}*/
 }
 
 
@@ -300,39 +285,31 @@ body{
 
 /*-----------ESPECIALIDADES---------------*/
 .inf_prin-espe{
-	padding-top: 10vw;
-	margin: 0 4vw;
+	padding-top: 20vh;
 	display: grid;
 	row-gap: 5vw;
+	margin: 0 4vw;
 }
 @media only screen and (max-width : 900px) 
 {
-	.inf_prin-espe{
-	  padding-top: 15vh; 
-	  }     
+	     
 }
 #parr-ini{
 	font-size: 2vw;
 	text-align: justify;
-	margin-rigth:2vw;
+	margin-rigth:vw;
 }
 @media only screen and (max-width : 900px) 
 {
-  #parr-ini{
-	  padding-rigth: 5vw;      
-	  width:90%;
-	  font-size:3vw;
-	 }
+ 
 }
 #inf_prin-espe-fondo{
-	margin: -2vw;
+	margin: vw;
 	margin-bottom: 3vw;
 }
 @media only screen and (max-width : 900px) 
 { 
-   #inf_prin-espe-fondo{
-	      width:95%;
-	  }
+ 
 }	
 .div-ofr-espe__h2{
 	display: grid;
@@ -342,8 +319,7 @@ body{
 }
 @media only screen and (max-width : 900px) 
 { 
-.div-ofr-espe__h2{
-	  width:90%;}
+
 }	
 .div-ofr-espe__h2 h2{
 	width: 100%;
@@ -366,9 +342,7 @@ body{
 }
 @media only screen and (max-width : 900px) 
 {
- .div-ofr-espe{
-	  width:90%;
-	  }
+ 
 }	
 .div-ofr-espe ul{
 	position: relative;
@@ -377,12 +351,12 @@ body{
 }
 .div-ofr-espe__inf{
 	padding: 2vh;
-	font-size: 2.1vw;
+	font-size: 2.3vw;
 	background: #EEF9EB;
 	border:0.8vw solid #9999cc;
 	border-radius: 1vw;
 	text-align: justify;
-}
+}	
 .div-ofr-espe img{
 	float: left;
 }
@@ -391,11 +365,7 @@ body{
 	display: grid;
 	grid-template-columns: 30vw 30vw 30vw;
 }
-@media only screen and (max-width : 900px) 
-{ 
- #grupo1{
-	  grid-template-columns: 28vw 28vw 28vw;}
-}
+
 #grupo1 img{
 	width: 100%;
 }
@@ -425,7 +395,6 @@ body{
 	padding-left: 7vw;
 }
 #man-sise{
-	position: ;
 	padding-top: 2vh;
 	padding-left: 3vw;
 
@@ -439,11 +408,6 @@ body{
 	padding-top: 13vh;
 	padding-left: 4vw;	
 }
-@media only screen and (max-width : 900px) 
-	{
-	  #man-sise1-1{
-	    padding-top: 3vh;}
-	}
 #man-sise1-2{
 	width: 70%;
 }
@@ -474,11 +438,6 @@ body{
 	grid-template-columns: 30vw 30vw 30vw;
 	align-items: center;
 }
-@media only screen and (max-width : 900px) 
-	{ 
-  	#inst-sisi{
-	   grid-template-columns:28vw 28vw 28vw;}
-	}
 #inst-sisi img{
 	width: 100%;
 }
@@ -486,12 +445,6 @@ body{
 	display: grid;
 	grid-template-columns: 30vw 30vw 30vw;
 	align-items: center;
-}
-@media only screen and (max-width : 900px) 
-{ 
-  #armad-tabl{
-	   grid-template-columns:28vw 28vw 28vw;
-	  }
 }
 #armad-tabl img{
 	width: 100%;
@@ -518,37 +471,66 @@ body{
 }
 @media only screen and (max-width : 900px) 
 { 
-  #div-ofr__inf1{
+	.inf_prin-espe{
+	  padding-top: 15vh; 
+	  }
+ 	#parr-ini{
+	  padding-rigth: 5vw;      
+	  width:90%;
+	  font-size:3vw;
+	 }
+  	#inf_prin-espe-fondo{
+	      width:95%;
+	  }
+	.div-ofr-espe__h2{
+	  width:90%;}
+	.div-ofr-espe{
+	  width:90%;
+	  }
+	.div-ofr-espe__inf{
+	    font-size: 2.8vw;
+	
+	  }
+ 	#grupo1{
+	  grid-template-columns: 28vw 28vw 28vw;}
+ 	#man-sise1-1{
+	    padding-top: 3vh;}
+	#inst-sisi{
+	   grid-template-columns:28vw 28vw 28vw;}
+ 	#armad-tabl{
+	   grid-template-columns:28vw 28vw 28vw;
+	  }
+    #div-ofr__inf1{
 
-	    width:96%;
+	    width:100%;
 	 }
 	 #div-ofr__inf2{
-	      width:110%;
+	      width:100%;
     }
 
     #div-ofr__inf3{ 
-    	  width:110%;	
+    	  width:100%;	
     }
     #div-ofr__inf4{ 
-	      width:92%;
+	      width:100%;
     }
     #div-ofr__inf6{  
-	      width:96%;	
+	      width:100%;	
     }
     #div-ofr__inf7{ 
-	      width:110%;	
+	      width:100%;	
     }
     #div-ofr__inf8{ 
-	      width:110%;	
+	      width:100%;	
     }
     #div-ofr__inf9{  
-	      width:95%;	
+	      width:100%;	
     }
     #div-ofr__inf10{ 
-	      width:98%;
+	      width:100%;
     }
     #div-ofr__inf11{
-	      width:90%;	
+	      width:100%;	
     }
 }	
 
@@ -570,13 +552,6 @@ body{
     padding-top:20vh;
     margin: 0 4vw;
     font-size: 2vw;
-}
-@media only screen and (max-width : 900px) 
-{
-#foot-contact{
-	  position: relative; 
-   bottom:-80vw;
-	}	
 }
 #prin-contact a{
 	text-decoration: none;
@@ -616,12 +591,6 @@ body{
 	width: 65%;
 	transition: background .2s, box-shadow .4s;
 }
-@media only screen and (max-width : 900px) 
-{ 
- #prin-contact-correo{
-	    width:100%;
-	    margin:0;}
-}
 #prin-contact-correo:hover{
 
 	background: #9999cc;
@@ -641,12 +610,6 @@ body{
 	display: grid;
 	grid-template-columns: 20vw 37vw;
 	grid-gap: 2vw;
-}
-@media only screen and (max-width : 900px) 
-{ 
-#prin-contact-correo a{
-	  grid-template-columns: 40vw 40vw;
-	  column-gap:4vw;}
 }	
 #prin-contact-correo a p{
 	margin-top: 10vh;
@@ -654,14 +617,17 @@ body{
 }
 @media only screen and (max-width : 900px) 
 { 
-#prin-contact-correo a p{
+	#foot-contact{
+	  position: relative; 
+   bottom:-80vw;
+	}
+	#prin-contact-correo{
+	    width:100%;
+	    margin:0;}
+	#prin-contact-correo a{
+	  grid-template-columns: 40vw 40vw;
+	  column-gap:4vw;}
+	#prin-contact-correo a p{
 	    width:100%;
 	    }
 }
-
-
-
-
-
-
-
