@@ -3,34 +3,39 @@ body{
 
 	/*font-family: 'Courier Prime', monospace;
 	font-family: 'Lato', sans-serif;*/
-    font-family: "Paprika", system-ui;
+	font-family: "Paprika", system-ui;
     font-weight: 400;
     font-style: normal;
     margin: 2vw;
 }
-ul{
+header{
+	width: 100%;
+}
+.nav-menu{
 	list-style-type: none;
 	display: flex;
 	margin: 4vw;
-	font-size: 3.5vw;
+	font-size: 2.1vw;
+	text-align: right;
 }
 .imag-prin {
-	
-	width: 21%;
+	width: 30%;
+	margin-left: 3vw;
+	z-index: 1;
+
 }
 .imag-prin img{
 	width: 100%;
 }
 .header__inicio{
 	position: fixed;
-	align-items: center;
+	align-items:center ;
     background: white;
     border-bottom: 3.5px solid;
     display: flex;
-    height: 16vh;
+    height: 17.8vh;
+    width: 100%;
     justify-content: space-between;
-    font-size: 1.8vw;
-    z-index: 1;
 }
 .header__a{
 	text-decoration: none;
@@ -43,16 +48,21 @@ ul{
 	color: #217808;
 	font-size: 2.4vw;
 }
-.navegador{
-	padding: 0 15vw;
 
-} 
 .footer{
 	margin-top: 2vw;
 	padding: 3vw;
 	background: #02080A;
 	
 
+}
+.menu{
+	display: none;
+	cursor: pointer;
+	position: absolute ;
+	top: 1.5em;
+	right: 1em;
+	padding: 2vw;
 }
 .footer .pie-p {
 	color: white;
@@ -99,23 +109,65 @@ ul{
 #img-whatsapp{
 	padding-top: 1vh;
 }
-@media only screen and (max-width : 900px) 
+.menu:hover{
+	background-color: #9f9f9f;
+	border-radius: 1em;
+}
+.div-menu-show{
+	transform: translateY(0);
+}
+@media only screen and (max-width : 650px) 
 	{
-		
+		.div-menu{
+			display: flex;
+			position: absolute;
+			top: 16.8vh;
+			left: 0;
+			right: 0;
+			width: 100vw;
+			height: 100vh;
+			background:white;
+			align-items: center;
+			display: none;
+		}	
+		.nav-menu{
+			position: absolute;
+			top: 5vh;
+			left: 0;
+			right: 0;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
+			margin: 0;
+		}
+		.nav-menu li{
+			margin-bottom: 6em;
+			padding: 1em;
+
+		}
+		.menu{
+			display: block;
+		}
 		.imag-prin{
-	      	width:38%;
-	  	} 
+			width:50%;
+		}
 		.header__inicio{
 	        font-size:3vw;
-	        height:15vh;	
-	        flex-direction: column;	 
+	        height:17%;		 
 	        width: 100%;
 	     }
-		.herader__a{
-	      	color: #217808;  }
-		.header__a:hover{
-	     	color:black;
-	     	font-size:3.3vw;}
+	     .header__a:hover{
+			color: #000;
+			font-size: 7vw;
+		}
+	    .nav-menu li:hover{
+	     	background-color: grey;
+	     	width: 100%;
+	    }
+		.header__inicio__nav a{
+	      	color: #000;
+	      	font-size: 7vw; 	 
+		}
 		#img-foot{
 	     	column-gap:10vw; 
 	     	padding-top:0;
@@ -128,15 +180,15 @@ ul{
 	    #img-whatsapp{
 	      padding-top:1.5vw;}
 	}
-
-
+.div-menu--show{
+	display: flex;
+}
 
 
 
 /*-----------INDEX-------------*/
 .inf_prin{
-	padding-top: 19vh;
-	margin:0 0vw;
+	padding-top: 16vh;
 }
 .inf_prin a{
 	text-decoration: none;
@@ -209,12 +261,13 @@ ul{
 }
 .div-ofr__h2 h2:hover{
 	font-size: 4.2;
-	border-radius: 1.5vw;
+	border-radius: 9px;
 	background: #217808;
 }
 .div-ofr__h2 {
-
-	margin: 4vh 6vw;
+	text-align: center;
+	margin: 5vh 6vw;
+	padding-right: 4vw;
 }
 .div-ofr__h2 h2 {
 	display: flex;
@@ -283,42 +336,29 @@ ul{
 
 /*-----------ESPECIALIDADES---------------*/
 .inf_prin-espe{
+	display: flex;
+	flex-direction: column;
 	padding-top: 20vh;
-	display: grid;
-	row-gap: 5vw;
-	margin: 0 4vw;
+	width: 100%;
+	margin: 0 2px;
 }
-@media only screen and (max-width : 900px) 
-{
-	     
-}
+
 #parr-ini{
 	font-size: 2vw;
-	text-align: justify;
-	margin-rigth:vw;
+	text-align: center;
 }
-@media only screen and (max-width : 900px) 
-{
- 
-}
+
+
 #inf_prin-espe-fondo{
-	margin: vw;
 	margin-bottom: 3vw;
 }
-@media only screen and (max-width : 900px) 
-{ 
- 
-}	
+
 .div-ofr-espe__h2{
 	display: grid;
-	font-size: 2.4vw;
+	font-size: 2vw;
 	padding-bottom: 1vh;
 	justify-content: left;
 }
-@media only screen and (max-width : 900px) 
-{ 
-
-}	
 .div-ofr-espe__h2 h2{
 	width: 100%;
 	padding: 5vh;
@@ -338,23 +378,24 @@ ul{
 	width: 90%;
 	padding:2vw;	
 }
-@media only screen and (max-width : 900px) 
-{
- 
-}	
+
 .div-ofr-espe ul{
-	position: relative;
 	margin: 7vw;
 	left: 6vw;
 }
 .div-ofr-espe__inf{
 	padding: 2vh;
 	font-size: 2.3vw;
-	background: #EEF9EB;
+	background: #fbfde7;
 	border:0.8vw solid #9999cc;
 	border-radius: 1vw;
 	text-align: justify;
 }	
+.div-ofr-espe__inf p,ul{
+	margin: 3vw;
+	font-size: 1.7vw;
+}
+
 .div-ofr-espe img{
 	float: left;
 }
@@ -369,13 +410,7 @@ ul{
 }
 
 #ins-cod1{
-	bottom: -5vw;
-	position: relative;
-}
-#ins-cod2{
-	position: relative;
-	left: 42vw;
-}
+
 
 #ban-port{
 	display: grid;
@@ -412,14 +447,14 @@ ul{
 #p-man-1{
 	display: inline-block;
 	padding: .5vw;
-	position: relative;
+
 	background: #a1d662;
 	right: -12vw;
 	bottom: vh;
 }
 #p-man-2{
 	display: inline-block;
-	position: relative;
+
 	background: #a1d662;
 	padding: .5vw;
 	right: -40vw;
@@ -534,22 +569,12 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*-----------CONTACTOS------------*/
 #prin-contact{
     padding-top:20vh;
     margin: 0 4vw;
     font-size: 2vw;
+    background: black;
 }
 #prin-contact a{
 	text-decoration: none;
@@ -562,7 +587,7 @@ ul{
 	border-radius: 7vw;
 	background: #25d366;
 	margin: 2vw;
-	transition:background .2s, color .2s,  width .2s,box-shadow .2s;
+	transition:.2s all;
 }
 .prin-contact-numeros:hover{
 	background: black;
@@ -599,6 +624,7 @@ ul{
 	margin:1vw ;
 	align-content: center;
 	width: 100%;
+	background: black;
 }
 #whatsapp-prin{
 	display: grid;
