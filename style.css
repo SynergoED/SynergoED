@@ -60,7 +60,7 @@ header{
 	display: none;
 	cursor: pointer;
 	position: absolute ;
-	top: 1.5em;
+	top: 0;
 	right: 1em;
 	padding: 2vw;
 }
@@ -147,9 +147,11 @@ header{
 		}
 		.menu{
 			display: block;
+			padding: 4vw;
+			margin-top: 3vh;
 		}
 		.imag-prin{
-			width:50%;
+			width:45%;
 		}
 		.header__inicio{
 	        font-size:3vw;
@@ -323,17 +325,6 @@ header{
 	  top:-5vh;
 	  left:60vw;}*/
 }
-
-
-
-
-
-
-
-
-
-
-
 /*-----------ESPECIALIDADES---------------*/
 .inf_prin-espe{
 	display: flex;
@@ -411,7 +402,7 @@ header{
 
 #ins-cod1{
 
-
+}
 #ban-port{
 	display: grid;
 	grid-template-columns: 25vw 25vw;
@@ -447,14 +438,12 @@ header{
 #p-man-1{
 	display: inline-block;
 	padding: .5vw;
-
 	background: #a1d662;
 	right: -12vw;
 	bottom: vh;
 }
 #p-man-2{
 	display: inline-block;
-
 	background: #a1d662;
 	padding: .5vw;
 	right: -40vw;
@@ -566,15 +555,12 @@ header{
 	      width:100%;	
     }
 }	
-
-
-
 /*-----------CONTACTOS------------*/
 #prin-contact{
     padding-top:20vh;
     margin: 0 4vw;
     font-size: 2vw;
-    background: black;
+
 }
 #prin-contact a{
 	text-decoration: none;
@@ -624,7 +610,6 @@ header{
 	margin:1vw ;
 	align-content: center;
 	width: 100%;
-	background: black;
 }
 #whatsapp-prin{
 	display: grid;
