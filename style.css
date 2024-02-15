@@ -376,14 +376,12 @@ section-espe{
 	grid-template-columns:40vw 40vw;
 	aling-content:center;
         aling-items:center;
-	text-aling:center;
-	justify-content: space-around;	
+	text-aling:center;	
 }
 #man-sise1 p{
 	width:100%;
 	text-aling:center;
         display:inline-block;
-	color:white;
 }
 .subTitle{
 	background:  #0d0838;
