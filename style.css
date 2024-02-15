@@ -379,6 +379,10 @@ section-espe{
 	text-aling:center;
 	justify-content: space-around;	
 }
+#man-sise1 p{
+	width:100%;
+	text-aling:center;
+}
 .subTitle{
 	background:  #0d0838;
 	border-radius: 2vw;
