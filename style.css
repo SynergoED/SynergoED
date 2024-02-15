@@ -368,21 +368,17 @@ section-espe{
 	margin: 1vw;
 }
 #man-sise1{
+	padding:1vw;
 	background: linear-gradient(rgb(8.398, 8.5202, 7.5178,0.15),rgb(8.398, 8.5202, 7.5178,0.15));
 	backdrop-filter: blur(15px);
 	width:100%;
 	display: grid;
 	grid-template-columns:40vw 40vw;
 	aling-content:center;
+        aling-items:center;
+	text-aling:center;
 	justify-content: space-around;	
 }
-#man-antes{
-	background-image:url("imag/man-sise/man-sise2.jpg");
-}
-#man-despues{
-	background-image:url("imag/man-sise/man-sise3.jpg");
-}
-
 .subTitle{
 	background:  #0d0838;
 	border-radius: 2vw;
