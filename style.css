@@ -371,10 +371,10 @@ section-espe{
 	width:100%;
 	display: flex;
 	flex-wrap:wrap;	
-	justify-content: space-around;
+	margin:0;
 }
 #man-sise1 img{
-	width:40%;	
+	width:30%;	
 	margin:1vw;
 }
 
