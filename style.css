@@ -382,6 +382,7 @@ section-espe{
 #man-sise1 p{
 	width:100%;
 	text-aling:center;
+        display:inline-block;
 }
 .subTitle{
 	background:  #0d0838;
