@@ -374,12 +374,13 @@ section-espe{
 	display: grid;
 	grid-template-columns:40vw 40vw;
 	aling-content:center;
-	justify-content: space-around;
-	
+	justify-content: space-around;	
 }
-#man-sise1 img{
-	width:30%;	
-	margin:1vw;
+#man-antes{
+	background-image:url("imag/man-sise/man-sise2.jpg");
+}
+#man-despues{
+	background-image:url("imag/man-sise/man-sise3.jpg");
 }
 
 .subTitle{
