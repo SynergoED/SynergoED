@@ -379,9 +379,10 @@ section-espe{
 	text-aling:center;	
 }
 #man-sise1 p{
-	width:100%;
+	aling-content:center;
+        aling-items:center;
 	text-aling:center;
-        display:inline-block;
+	display:inline-block;
 }
 .subTitle{
 	background:  #0d0838;
