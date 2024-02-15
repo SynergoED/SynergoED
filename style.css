@@ -371,8 +371,9 @@ section-espe{
 	background: linear-gradient(rgb(8.398, 8.5202, 7.5178,0.15),rgb(8.398, 8.5202, 7.5178,0.15));
 	backdrop-filter: blur(15px);
 	width:100%;
-	display: flex;
-	flex-wrap:wrap;	
+	display: grid;
+	grid-template-columns:40vw 40vw;
+	aling-content:center;
 	justify-content: space-around;
 	
 }
