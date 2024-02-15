@@ -374,6 +374,8 @@ section-espe{
 	width:100%;
 	display: grid;
 	grid-template-columns:40vw 40vw;
+	grid-gap:1.5vw
+
 	aling-content:center;
         aling-items:center;
 	text-aling:center;	
@@ -384,6 +386,9 @@ section-espe{
 	text-aling:center;
 	padding-left:37%;
 	display:inline-block;
+}
+#man-sise1-1{
+	float:bootom;
 }
 .subTitle{
 	background:  #0d0838;
