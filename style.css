@@ -368,9 +368,15 @@ section-espe{
 	margin: 1vw;
 }
 #man-sise{
+	width:100%;
 	display: flex;
-	
+	flex-wrap:wrap;	
+	justify-content: space-around;
 }
+#man-sise img{
+	width:30%;	
+}
+
 .subTitle{
 	background:  #0d0838;
 	border-radius: 2vw;
