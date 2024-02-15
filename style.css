@@ -367,7 +367,10 @@ section-espe{
 	width:40%;
 	margin: 1vw;
 }
-
+#man-sise{
+	display: flex;
+	
+}
 .subTitle{
 	background:  #0d0838;
 	border-radius: 2vw;
