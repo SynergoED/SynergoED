@@ -308,15 +308,10 @@ section{
 }
 .inf-fn{	
 	text-align: center;
-	margin: 2vw;
-	
+	margin:4vh 2vw;	
 }
 .inf-fn p{
 	font-size: 3vw;
-}
-#parr-fin{
-    font-size:3vw;
-    text-aling:justify;
 }
 @media only screen and (max-width : 900px) 
 { 
