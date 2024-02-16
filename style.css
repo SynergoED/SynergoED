@@ -313,21 +313,6 @@ section{
 .inf-fn p{
 	font-size: 3vw;
 }
-
-/*#vermas {
-	font-size: 2vw;
-	text-decoration: none;
-	background: green;
-	border-radius: 1em;
-	transition:.5s all;
-}*/
-/*
-#vermas:hover{
-	font-size: 3vw;
-	box-shadow: .5em .5em 1em ;
-	top: -12vh;
-	left: 66vw;
-}*/
 #parr-fin{
     font-size:3vw;
     text-aling:justify;
@@ -343,14 +328,6 @@ section{
 		color: white;
 		margin: 3 0;
 	}
-/*	#vermas{
-	  font-size:5vw;
-	  top:-5vh;
-	  left:60vw;}
-  	#vermas:hover{
-	  font-size:5vw;
-	  top:-5vh;
-	  left:60vw;}*/
 }
 /*-----------ESPECIALIDADES---------------*/
 section-espe{
@@ -452,86 +429,73 @@ section-espe{
 
 } 	
 /*-----------CONTACTOS------------*/
-#prin-contact{
-	margin: 10px;
-    font-size: 2vw;
-
+.contacto{
+	margin: 4vh 2vw;
 }
-#prin-contact a{
-	text-decoration: none;
-	color: white;
-
-}
-.prin-contact-numeros{
-
-	width: 80%;
-	border-radius: 7vw;
-	background: #25d366;
-	margin: 2vw;
-	transition:.2s all;
-}
-.prin-contact-numeros:hover{
-	background: black;
-	color: white;
-	width: 85%;
-	box-shadow: 0.5vw .5vw 3vw #25d366;
-}
-
-.prin-contact-numeros img{
-	width: 60%;
-	margin-left: 5vw;
-	margin-top: 2vh;
-
-}
-.prin-contact-numeros p{
-	margin-left:6vw ;
-}
-#prin-contact-correo{
-	display: inline-block;
-	background: black;
-	justify-content: center;
-	margin: 3vw;
-	border-radius: 2vw ;
-	width: 65%;
-	transition: background .2s, box-shadow .4s;
-}
-#prin-contact-correo:hover{
-
-	background: #9999cc;
-	box-shadow: 2vw 2vw 3vw;
-
-}
-#correo-1 {
-	margin:1vw ;
-	align-content: center;
-	width: 100%;
-}
-#whatsapp-prin{
-	display: grid;
-	grid-template-columns: 30vw 30vw 30vw;
-}
-#prin-contact-correo a{
-	display: grid;
-	grid-template-columns: 20vw 37vw;
-	grid-gap: 2vw;
-}	
-#prin-contact-correo a p{
-	margin-top: 10vh;
+.contacto p{
 	font-size: 3vw;
 }
-@media only screen and (max-width : 900px) 
-{ 
-	#foot-contact{
-	  position: relative; 
-   bottom:-80vw;
+.whatsapp-c{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.whatsapp-c a{
+	background: #25d366;
+	display: block;
+	box-shadow: .2vw .2vw 2vw black;
+	width: 40vw;
+	margin: 2vw;
+	color: #fff;
+	font-size: 5vw;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 6vw;
+}
+.whatsapp-c a:hover{
+	background: #188742;
+	box-shadow: .3vw .3vw 2vw #25d366 ;
+}
+.correo-c{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.correo-c a{
+	background: #9ca0cc;
+	display: flex;
+	box-shadow: .2vw .2vw 2vw black;
+	width: 94vw;
+	margin: 2vw;
+	color: #fff;
+	text-decoration: none;
+	font-size: 4.5vw;
+	align-items: center;
+	text-align: center;
+	border-radius: 6vw;
+}
+.correo-c a:hover{
+	background: #575ea8;
+	box-shadow: .2vw .2vw 3vw #000;
+}
+.whatsapp-c img{
+	width:50%;
+	margin: 2vw;
+}
+.correo-c img{
+	width: 25%;
+	margin: 2vw;
+}
+@media only screen and (min-width : 650px) {
+	.correo-c a{
+		width: 60vw;
+		font-size: 2.5vw;
 	}
-	#prin-contact-correo{
-	    width:100%;
-	    margin:0;}
-	#prin-contact-correo a{
-	  grid-template-columns: 40vw 40vw;
-	  column-gap:4vw;}
-	#prin-contact-correo a p{
-	    width:100%;
-	    }
+	.whatsapp-c a{
+		width: 30vw;
+		font-size: 2.4vw;
+	}
+	.contacto p{
+	font-size: 2vw;
+	}
 }
