@@ -157,7 +157,7 @@ header{
 		.nav-menu li{
 			margin-bottom: 6em;
 			padding: 1em;
-			color:#fff;
+			color:white;
 		}
 		.menu{
 			display: block;
@@ -166,7 +166,7 @@ header{
 			width:60%;
 		}
 	     .header__a:hover{
-			color: #000;
+			color: white;
 			font-size: 7vw;
 		}
 	    .nav-menu li:hover{
@@ -174,7 +174,7 @@ header{
 	     	width: 100%;
 	    }
 		.header__inicio__nav a{
-	      	color: #000;
+	      	color: white;
 	      	font-size: 4.5vw; 	 
 		}
 		#img-foot{
