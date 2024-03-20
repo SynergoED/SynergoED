@@ -37,7 +37,7 @@ header{
     background: white;
     border-bottom: 3.5px solid;
     display: flex;
-    height: 20vh;
+    height: 17vh;
     justify-content: space-between;
     z-index: 100;
 }
